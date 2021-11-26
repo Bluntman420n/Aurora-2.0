@@ -1,0 +1,83 @@
+textarea {
+  background-color: transparent !important;
+  border: 2px solid $color-gray !important;
+  color: $color-white !important;
+  outline: 0 !important;
+}
+
+textarea:focus {
+  background-color: transparent !important;
+  color: $color-white !important;
+  border-color: $color-gray !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+input {
+  background-color: transparent !important;
+  border: 2px solid $color-gray !important;
+  color: $color-white !important;
+  outline: 0 !important;
+}
+
+input:focus {
+  background-color: transparent !important;
+  color: $color-white !important;
+  border-color: $color-secondary !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+select {
+  background-color: transparent !important;
+  border: 2px solid $color-gray !important;
+  color: $color-white !important;
+  outline: 0 !important;
+}
+
+select:focus {
+  background-color: transparent !important;
+  color: $color-white !important;
+  border-color: $color-secondary !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+.btn-success, .btn-primary, .btn-secondary, .btn-warning, .btn-info, .btn-danger {
+  background-color: $color-secondary;
+  font-weight: bold;
+  color: $color-primary;
+  transition: all .3s ease-in-out;
+  border: none;
+  padding: 6px 20px;
+
+  &:hover {
+    background-color: darken($color-secondary, 5%);
+    color: $color-primary;
+    border: none;
+  }
+}
+
+.btn-danger {
+  background-color: #ff5956;
+  color: white;
+
+  &:hover {
+    background-color: darken(#ff5956, 5%);
+    color: white;
+  }
+}
+
+.badge-success, .badge-primary, .badge-secondary, .badge-warning, .badge-info, .badge-danger {
+  background-color: $color-secondary;
+  font-weight: bold;
+  color: white;
+  transition: all .3s ease-in-out;
+  border: none;
+  padding: 5px 10px;
+}
+
+.btn-danger {
+  background-color: #ff5956;
+  color: white;
+}

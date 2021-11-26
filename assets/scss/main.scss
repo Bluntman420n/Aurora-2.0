@@ -1,0 +1,89 @@
+
+.page-container {
+  position: relative;
+  background-color: transparent;
+
+  &-title {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: $color-white;
+    text-transform: uppercase;
+    padding-top: 30px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 885px) {
+      padding-top: 40px;
+      margin-bottom: 20px;  
+    }
+  }
+
+  &-content {
+    padding: 0px 40px 80px 40px;
+
+    @media screen and (max-width: 800px) {
+      padding: 0px 10px 80px 10px;
+    }
+  }
+
+}
+
+/* ==============================
+   Container
+=============================== */
+
+.container {
+  position: relative;
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1618px) {
+  .container {
+    width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1525px) {
+  .container {
+    width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1410px) {
+  .container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1244px) {
+  .container {
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1052px) {
+  .container {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 848px) {
+  .container {
+    width: calc(100% - 40px);
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

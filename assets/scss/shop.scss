@@ -1,0 +1,157 @@
+.shop-sidebar {
+  background-color: $color-primary;
+  padding: 20px 15px;
+
+  .top-user-info {
+    text-align: center;
+
+    img {
+      width: 60px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    i {
+      font-size: 16px;
+      color: #F4DF4C;
+    }
+
+    a {
+      color: $color-secondary;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      display: block;
+      font-size: 18px;
+    }
+
+  }
+
+  .categories {
+
+    a {
+      background-color: $color-tertiary;
+      padding: 10px 25px;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $color-secondary;
+      border-radius: 3px;
+      border: none;
+      margin: 5px 0;
+      text-align: center;
+      font-weight: bold;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-tertiary;
+      }
+    }
+
+    .category {
+      background-color: $color-tertiary;
+      padding: 10px 25px;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $color-secondary;
+      border-radius: 3px;
+      border: none;
+      margin: 5px 0;
+      text-align: center;
+      font-weight: bold;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-tertiary;
+      }
+    }
+
+    .sub-category {
+      margin-left: 10px !important;
+      background-color: $color-tertiary;
+      padding: 10px 25px;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $color-secondary;
+      border-radius: 3px;
+      border: none;
+      margin: 5px 0;
+      text-align: center;
+      font-weight: bold;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        color: $color-white;
+        background-color: $color-tertiary;
+      }
+    }
+
+    .active {
+      color: $color-primary;
+      background-color: $color-secondary;
+    }
+
+  }
+
+}
+
+.products {
+
+  .card-body {
+    background-color: transparent;
+  }
+
+  .product {
+    border-radius: 5px;
+    border: 3px solid $color-secondary;
+    text-align: center;
+    background-color: $color-primary;
+
+    img {
+      width: 50%;
+      height: auto;
+      margin: 10%;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    h5 {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .buy {
+      background-color: $color-tertiary;
+      padding: 10px 25px;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $color-secondary;
+      border-radius: 0px;
+      border: none;
+      margin: 5px 0;
+      text-align: center;
+      font-weight: bold;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+        background-color: $color-secondary;
+        color: $color-tertiary;
+      }
+    }
+
+  }
+
+}

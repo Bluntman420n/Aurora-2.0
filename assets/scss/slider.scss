@@ -1,0 +1,88 @@
+.multiSlider {
+  position: relative;
+
+  .MS-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    .item {
+      display: inline-block;
+      width: 50%;
+      position: relative;
+      vertical-align: top;
+      height: 100%;
+    }
+
+  }
+
+  .MS-controls {
+
+    .MS-left {
+      left: -40px;
+      transform: translate3d(0,-50%,0) rotate(90deg);
+    }
+
+    .MS-right {
+      right: -40px;
+      transform: translate3d(0,-50%,0) rotate(-90deg);
+    }
+
+    button {
+      cursor: pointer;
+      position: absolute;
+      border: none;
+      background-color: transparent;
+      outline: 0;
+      top: 50%;
+      transform: translate3d(0,-50%,0) rotate(90deg);
+      color: rgba(0, 0, 0, 0.4);
+      transition: 0.15s linear;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      width: 40px;
+      height: 40px;
+
+      &:after {
+        font-size: 35px;
+        color: $color-white;
+        position: absolute;
+        z-index: 15;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate3d(-50%, -50%, 0);
+        transform: translate3d(-50%, calc(-50% + 1px), 0);
+        content: "\f078";
+      }
+
+      &:hover &:after {
+        color: darken($color-secondary, 10%);
+      }
+
+    }
+
+  }
+
+}
+
+@media (max-width: 992px) {
+  .multiSlider .MS-controls button {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .multiSlider .MS-controls button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1052px) {
+  .multiSlider .MS-content .item {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    vertical-align: top;
+    height: 100%;
+  }
+}

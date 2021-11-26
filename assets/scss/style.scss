@@ -1,0 +1,327 @@
+$color-primary: #1E2024;
+$color-primary-transparent: #1e20249f;
+$color-secondary: #FF0000;
+$color-secondary-transparent: #00e1ff9d;
+$color-tertiary: #292C31;
+$color-tertiary-transparent: #292c31a2;
+
+$color-white: white;
+$color-gray: #DDDDDD;
+
+/* BASE CSS
+ * --------------------------------------- */
+
+body {
+  overflow-x: hidden !important;
+  background-color: $color-tertiary;
+  color: $color-white;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Rubik', sans-serif;
+}
+
+body ::selection {
+  background: $color-secondary;
+  color: $color-tertiary;
+}
+
+header {
+  margin-bottom: 100px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+  padding-inline-end: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+li {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: $color-white;
+  transition: color .3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-secondary;
+  }
+
+  &:active {
+    background-color: transparent !important;
+  }
+
+}
+
+::-webkit-scrollbar
+{
+  width: 7px;  /* for vertical scrollbars */
+  height: 7px; /* for horizontal scrollbars */
+}
+::-webkit-scrollbar-track
+{
+  background: $color-primary;
+}
+::-webkit-scrollbar-thumb
+{
+  background: $color-tertiary;
+  height:10px;
+}
+::-webkit-scrollbar-track-piece {
+  height: 30px;
+}
+
+/* ==============================
+   Table
+=============================== */
+
+.table {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  min-width: auto;
+  text-align: start;
+  border: none;
+  margin: 0;
+  border-spacing: 0;
+  padding: 5px;
+  background-color: $color-secondary;
+  border-collapse: collapse;
+  border-radius: 0;
+
+  td, th {
+    border-top: none !important;
+    color: $color-white !important;
+  }
+
+  thead {
+    text-transform: uppercase;
+
+    th {
+      width: 20%;
+      padding: 16px;
+      text-align: start;
+      border-bottom: none !important;
+      font-weight: bold;
+      color: $color-primary !important;
+    }
+
+  }
+
+  tbody {
+    background-color: $color-primary;
+
+    td {
+      padding: 10px;
+      font-weight: bold;
+    }
+
+  }
+
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+
+  .card-header {
+    background-color: $color-primary;
+    color: $color-white !important;
+    border-radius: 0;
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.shadow-sm {
+  box-shadow: none !important;
+}
+
+.btn-link {
+  color: $color-secondary;
+  transition: color .3s ease-in-out;
+}
+
+.breadcrumb {
+  background-color: $color-primary;
+}
+
+.editor-toolbar {
+  border-top: 1px solid $color-white !important;
+  border-left: 1px solid $color-white !important;
+  border-right: 1px solid $color-white !important;
+
+  i {
+    color: $color-secondary;
+  }
+}
+
+.CodeMirror {
+  background-color: $color-tertiary !important;
+  color: $color-white !important;
+  border: 1px solid $color-white !important;
+}
+
+.card-body {
+  background-color: $color-primary-transparent;
+}
+
+.forum {
+
+  .list-group-item {
+    background-color: $color-primary-transparent;
+  }
+
+
+  .list-group-item i, .card-header i {
+    color: $color-secondary;
+  }
+
+}
+
+.tab-content {
+  padding: 15px;
+  background-color: $color-primary !important;
+}
+
+.nav-tabs {
+  border: none;
+
+  .active {
+    color: $color-secondary !important;
+    background-color: $color-primary !important;
+    border-color: transparent !important;
+  }
+}
+
+.list-group-flush>.list-group-item {
+  background-color: $color-primary;
+}
+
+.offerts {
+
+  .card-body {
+    background-color: $color-tertiary;
+    color: $color-primary;
+    border-radius: 10px;
+
+    h4 {
+      color: $color-white;
+      font-weight: bold;
+      font-size: 28px;
+      padding: 10px 20px;
+      margin-top: 40px;
+      background-color: $color-secondary;
+    }
+
+  }
+
+}
+
+.vote {
+
+  .vote-title {
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+
+  .vote-buttons-group {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+
+    .btn {
+      background-color: $color-primary;
+      font-weight: bold;
+      color: $color-secondary;
+      transition: all .3s ease-in-out;
+      font-size: 18px;
+      padding: 10px 25px;
+      border: none;
+      min-width: 250px;
+      margin: 10px;
+      text-transform: uppercase;
+  
+      &:hover {
+        background-color: $color-secondary;
+        color: $color-primary;
+        border: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    table {
+      padding: 2px;
+      border-collapse: collapse;
+      font-weight: bold;
+
+      thead {
+
+        tr {
+          border-radius: 2px;
+        }
+
+        th {
+          padding: 10px;
+        }
+
+      }
+
+      tbody {
+        border-radius: 2px;
+
+        td {
+          padding: 6px;
+        }
+
+      }
+
+    }
+  }
+}
+
+.list-group {
+  background-color: $color-primary;
+
+  a {
+    background-color: $color-primary;
+    border: none;
+  }
+
+  .active {
+    color: $color-secondary;
+    background-color: $color-primary;
+    border: none;
+  }
+
+}
+
+@import "slider.scss";
+@import "layout.scss";
+@import "input.scss";
+@import "modal.scss";
+@import "main.scss";
+@import "home.scss";
+@import "faq.scss";
+@import "news.scss";
+@import "shop.scss";
